@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Obrigado! | Mariah Liss</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        /* ===== PÁGINA DE OBRIGADO ===== */
+        main {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 80vh;
+            padding: 2rem;
+        }
+
+        .thank-you-container {
+            text-align: center;
+            background: rgba(30, 40, 70, 0.8);
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            border-radius: 12px;
+            padding: 3rem 2rem;
+            max-width: 600px;
+            animation: slideUp 0.6s ease;
+        }
+
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .success-icon {
+            font-size: 4rem;
+            margin-bottom: 1.5rem;
+            animation: bounce 0.8s ease infinite;
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        .thank-you-container h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 1rem;
+            letter-spacing: 1px;
+        }
+
+        .subtitle {
+            font-size: 1.1rem;
+            color: #d4af37;
+            margin-bottom: 2rem;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+
+        .message {
+            font-size: 1rem;
+            color: #b0b0b0;
+            line-height: 1.8;
+            margin-bottom: 2rem;
+        }
+
+        .highlight {
+            color: #d4af37;
+            font-weight: 600;
+        }
+
+        .info-box {
+            background: rgba(212, 175, 55, 0.08);
+            border-left: 3px solid #d4af37;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 4px;
+            text-align: left;
+        }
+
+        .info-box h3 {
+            color: #d4af37;
+            font-size: 0.95rem;
+            letter-spacing: 1px;
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+        }
+
+        .info-box p {
+            color: #b0b0b0;
+            font-size: 0.9rem;
+            margin: 0.5rem 0;
+        }
+
+        .btn-back {
+            display: inline-block;
+            background: linear-gradient(135deg, #d4af37 0%, #f4d03f 100%);
+            color: #0a0e27;
+            padding: 0.9rem 2rem;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: 700;
+            font-size: 0.95rem;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            margin-top: 1rem;
+        }
+
+        .btn-back:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 30px rgba(212, 175, 55, 0.4);
+        }
+
+        .secondary-btn {
+            display: inline-block;
+            background: transparent;
+            color: #d4af37;
+            padding: 0.9rem 2rem;
+            text-decoration: none;
+            border: 2px solid rgba(212, 175, 55, 0.5);
+            border-radius: 4px;
+            font-weight: 700;
+            font-size: 0.95rem;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            margin: 1rem 0.5rem;
+            cursor: pointer;
+        }
+
+        .secondary-btn:hover {
+            border-color: #d4af37;
+            background: rgba(212, 175, 55, 0.1);
+            transform: translateY(-2px);
+        }
+
+        .button-group {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+        }
+
+        .footer-text {
+            margin-top: 2rem;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(212, 175, 55, 0.2);
+            font-size: 0.85rem;
+            color: #999;
+        }
+
+        .footer-text p {
+            margin: 0.5rem 0;
+        }
+
+        /* Responsivo */
+        @media (max-width: 768px) {
+            .thank-you-container {
+                padding: 2rem 1.5rem;
+            }
+
+            .thank-you-container h1 {
+                font-size: 1.8rem;
+            }
+
+            .success-icon {
+                font-size: 3rem;
+            }
+
+            .button-group {
+                flex-direction: column;
+            }
+
+            .btn-back, .secondary-btn {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="header-container">
+        <div class="logo">
+            <img src="images/logo.jpeg" alt="Mariah Liss" class="logo-image">
+            <div class="logo-text">
+                <span class="logo-vitrini">MARIAH LISS</span>
+                <h1>ENGENHARIA</h1>
+            </div>
+        </div>
+
+        <div class="ticker-wrapper">
+            <div class="ticker-track">
+                <div class="ticker-item">● FRETE VIP GRÁTIS PARA TODO BRASIL</div>
+                <div class="ticker-item">● INSPEÇÃO TÉCNICA: LOTE 316 APROVADO</div>
+                <div class="ticker-item">● SEGURO EXTRAVIO ATIVO EM TODAS AS COMPRAS</div>
+                <div class="ticker-item">● MARIAH LISS: CURADORIA DE ALTA PERFORMANCE</div>
+                <div class="ticker-item">● FRETE VIP GRÁTIS PARA TODO BRASIL</div>
+            </div>
+        </div>
+
+        <button class="mode-toggle">FRETE GRÁTIS</button>
+    </div>
+</header>
+
+<main>
+    <div class="thank-you-container">
+        <div class="success-icon">✨</div>
+        
+        <h1>Mensagem Enviada com Sucesso!</h1>
+        
+        <p class="subtitle">Obrigado por entrar em contato com a Mariah Liss</p>
+        
+        <p class="message">
+            Sua mensagem foi recebida com sucesso. Nossa equipe de <span class="highlight">Curadoria de Elite</span> está analisando sua solicitação e responderá em breve.
+        </p>
+
+        <div class="info-box">
+            <h3>📧 O QUE ACONTECE AGORA?</h3>
+            <p>Você receberá uma resposta em até <span class="highlight">24 horas úteis</span> no e-mail que cadastrou.</p>
+            <p>Verifique também a pasta de <strong>SPAM</strong> caso não receba a mensagem.</p>
+        </div>
+
+        <div class="info-box">
+            <h3>💡 DICA EXTRA</h3>
+            <p>Enquanto aguarda, conheça mais sobre nossa <span class="highlight">Curadoria de Performance</span> e explore todos os produtos de <strong>Engenharia de Elite</strong>.</p>
+        </div>
+
+        <div class="button-group">
+            <a href="index.html" class="btn-back">VOLTAR PARA A LOJA</a>
+            <a href="index.html#produtos" class="secondary-btn">VER PRODUTOS</a>
+        </div>
+
+        <div class="footer-text">
+            <p>© 2026 MARIAH LISS | CURADORIA DE PERFORMANCE</p>
+            <p>Operação Oficial Nacional</p>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <div class="footer-container">
+        <hr class="footer-divider">
+        <div style="text-align: center; padding: 1rem; color: #999; font-size: 0.8rem;">
+            <p>© 2026 MARIAH LISS | CURADORIA DE PERFORMANCE</p>
+            <p>Operação Oficial Nacional</p>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
